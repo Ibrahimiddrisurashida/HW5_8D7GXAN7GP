@@ -1,0 +1,15 @@
+{% extends 'base.html' %} {% block main %}
+
+<div class="rounded shadow p-3 mt-5">
+  <h3>Edit {{movie.title}}</h3>
+  <hr />
+  {% if msg }
+  <p class="p-4 alert alert-info">
+    {{msg}}
+  </p>
+  {% endif %}
+  <form action="/edit/{{movie.title}}" method="post">
+    <label for="title">Release Year</label>
+    <input type="text" value="{{movie.title}}"
+  </form>
+</div>
